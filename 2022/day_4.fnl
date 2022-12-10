@@ -30,9 +30,7 @@
 
 (fn has-overlap? [elf_one elf_two]
   (let [elf_one_start (. elf_one 1) elf_one_end (. elf_one 2) elf_two_start (. elf_two 1) elf_two_end (. elf_two 2)]
-    (or
       (and (>= elf_one_end elf_two_start) (<= elf_one_start elf_two_end))
-      false
     )
   )
 )
